@@ -32,7 +32,7 @@ public:
         nome = novoNome;
     }
 
-    // Setter para o Preço com validação (não pode ser zero ou negativo)
+    
     void set_preco(double novoPreco) {
         if (novoPreco > 0.0) {
             preco = novoPreco;
@@ -43,7 +43,7 @@ public:
         }
     }
 
-    // Método auxiliar para exibir os dados do produto facilmente
+    
     void exibirDados() const {
         std::cout << "Produto: " << nome << " | Preco: R$ " 
                   << std::fixed << std::setprecision(2) << preco << "\n";
